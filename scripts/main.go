@@ -12,7 +12,7 @@ import (
 var app App
 
 func main() {
-	app.Initialize("postgres", "", "goexercise")
+	app.Initialize("postgres", "", "postgres")
 
 	args_print := flag.Bool("print", false, "set true to print products")
 	args_insert := flag.Bool("insert", false, "set true to insert products")

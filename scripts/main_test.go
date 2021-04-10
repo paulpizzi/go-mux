@@ -22,7 +22,7 @@ const tableCreationQuery = `CREATE TABLE IF NOT EXISTS products
 )`
 
 func TestMain(m *testing.M) {
-	a.Initialize("postgres", "", "goexercise")
+	a.Initialize("postgres", "", "postgres")
 
 	ensureTableExists()
 	code := m.Run()
